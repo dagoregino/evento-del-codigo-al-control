@@ -38,8 +38,7 @@ Integrar librerías externas, comunicación por bus I2C, medición de tiempos de
 #### Diagrama de Conexión:
 ```text
   [ ESP32 ]
-   ├── 5V ──────── ( VCC ) Sensor HC-SR04
-   ├── 5V ────── ( VCC ) Pantalla OLED
+   ├── 5V ──────── ( VCC ) Sensor HC-SR04/ Pantalla OLED
    ├── GND ─────── ( GND ) Sensor HC-SR04 / Pantalla OLED / LED
    │
    ├── GPIO 26 ─── ( TRIG ) Sensor HC-SR04
