@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 24.04, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -56.1,
+      "left": -186.5,
+      "attrs": { "distance": "334" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 63.6, "left": -217, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 119.15,
+      "left": -201.6,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 233.54,
+      "left": -95.77,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:GND", "esp:CMD", "black", [ "v0" ] ],
+    [ "esp:5V", "ultrasonic1:VCC", "red", [ "h-143.85", "v-163.2" ] ],
+    [ "ultrasonic1:TRIG", "esp:26", "gold", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:27", "#8f4814", [ "v86.4", "h8.8" ] ],
+    [ "led1:C", "r1:1", "black", [ "v19.2", "h0.4" ] ],
+    [ "r1:2", "esp:CMD", "black", [ "v0" ] ],
+    [ "esp:25", "led1:A", "orange", [ "h-163.05" ] ],
+    [ "oled1:VCC", "esp:5V", "red", [ "v-38.4", "h0.15" ] ],
+    [ "oled1:GND", "esp:CMD", "black", [ "v-48", "h86.25" ] ],
+    [ "oled1:SDA", "esp:21", "magenta", [ "v-19.2", "h172.87", "v-153.6" ] ],
+    [ "oled1:SCL", "esp:22", "blue", [ "v-9.6", "h192.3", "v-163.2" ] ]
+  ],
+  "dependencies": {}
+}
