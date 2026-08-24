@@ -22,11 +22,14 @@ Aplicar la configuración de pines digitales con `pinMode()`, el cambio de estad
 
 > **Nota:** Cada LED debe tener su propia resistencia de 220 Ω conectada en serie para limitar la corriente.
 
-| Componente | Pin Ánodo (+) | Resistencia | Pin Cátodo (-) |
-| :--- | :---: | :---: | :---: |
-| **LED Rojo** | GPIO 25 | 220 Ω | GND |
-| **LED Amarillo** | GPIO 26 | 220 Ω | GND |
-| **LED Verde** | GPIO 27 | 220 Ω | GND |
+| Dispositivo | Pin del Componente | Conexión en ESP32 / Alimentación |
+| :--- | :--- | :--- |
+| **LED Rojo** | Ánodo (+) | GPIO 25 (con Resistencia 220 Ω) |
+| | Cátodo (-) | GND |
+| **LED Amarillo** | Ánodo (+) | GPIO 26 (con Resistencia 220 Ω) |
+| | Cátodo (-) | GND |
+| **LED Verde** | Ánodo (+) | GPIO 27 (con Resistencia 220 Ω) |
+| | Cátodo (-) | GND |
 
 #### Diagrama de Conexión:
 ```text
