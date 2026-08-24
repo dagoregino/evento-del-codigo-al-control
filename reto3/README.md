@@ -28,7 +28,7 @@ Integrar librerías externas, comunicación por bus I2C, medición de tiempos de
 | | GND | GND |
 | | TRIG | GPIO 26 |
 | | ECHO | GPIO 27 |
-| **Pantalla OLED I2C** | VCC | 3.3V |
+| **Pantalla OLED I2C** | VCC | 5V |
 | | GND | GND |
 | | SDA | GPIO 21 |
 | | SCL | GPIO 22 |
@@ -39,7 +39,7 @@ Integrar librerías externas, comunicación por bus I2C, medición de tiempos de
 ```text
   [ ESP32 ]
    ├── 5V ──────── ( VCC ) Sensor HC-SR04
-   ├── 3.3V ────── ( VCC ) Pantalla OLED
+   ├── 5V ────── ( VCC ) Pantalla OLED
    ├── GND ─────── ( GND ) Sensor HC-SR04 / Pantalla OLED / LED
    │
    ├── GPIO 26 ─── ( TRIG ) Sensor HC-SR04
