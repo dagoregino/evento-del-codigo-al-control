@@ -24,13 +24,13 @@ Aplicar lecturas del conversor analógico-digital (ADC), visualización de datos
 
 | Componente | Pin de Señal / Ánodo (+) | Alimentación / Cátodo (-) |
 | :--- | :---: | :---: |
-| **Sensor NTC** | GPIO 34 (Salida) | VCC (3.3V) / GND |
+| **Sensor NTC** | GPIO 34 (Salida) | VCC (5V) / GND |
 | **LED de Alerta** | GPIO 25 (con Resistencia 220 Ω) | GND |
 
 #### Diagrama de Conexión:
 ```text
   [ ESP32 ]
-   ├── 3.3V ────── ( VCC ) Sensor NTC
+   ├── 5V ────── ( VCC ) Sensor NTC
    ├── GPIO 34 ─── ( OUT ) Sensor NTC
    ├── GND ─────── ( GND ) Sensor NTC
    │
