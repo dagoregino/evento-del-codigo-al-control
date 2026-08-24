@@ -22,16 +22,20 @@ Aplicar lecturas del conversor analógico-digital (ADC), visualización de datos
 
 > **Nota:** El LED de alerta debe contar con su propia resistencia de 220 Ω en serie para limitar la corriente.
 
-| Componente | Pin de Señal / Ánodo (+) | Alimentación / Cátodo (-) |
-| :--- | :---: | :---: |
-| **Sensor NTC** | GPIO 34 (Salida) | VCC (5V) / GND |
-| **LED de Alerta** | GPIO 25 (con Resistencia 220 Ω) | GND |
+| Dispositivo | Pin del Componente | Conexión en ESP32 / Alimentación |
+| :--- | :--- | :--- |
+| **Sensor NTC** | VCC | 5V |
+| | GND | GND |
+| | OUT (Salida) | GPIO 34 |
+| **LED de Alerta** | Ánodo (+) | GPIO 25 (con Resistencia 220 Ω) |
+| | Cátodo (-) | GND |
 
 #### Diagrama de Conexión:
 ```text
   [ ESP32 ]
-   ├── 5V ────── ( VCC ) Sensor NTC
+   ├── 5V ──────── ( VCC ) Sensor NTC
+   ├── GND ─────── ( GND ) Sensor NTC / LED
+   │
    ├── GPIO 34 ─── ( OUT ) Sensor NTC
-   ├── GND ─────── ( GND ) Sensor NTC
    │
    └── GPIO 25 ─── [Resistencia 220 Ω] ─── ( + ) LED Alerta ( - ) ─── GND
