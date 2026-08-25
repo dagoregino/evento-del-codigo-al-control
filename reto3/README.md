@@ -35,6 +35,9 @@ Integrar librerías externas, comunicación por bus I2C, medición de tiempos de
 | **LED de Alerta** | Ánodo (+) | GPIO 25 (con Resistencia 220 Ω) |
 | | Cátodo (-) | GND |
 
+#### Enlace Wokwi:
+https://wokwi.com/projects/473290413396131841
+
 #### Diagrama de Conexión:
 ```text
   [ ESP32 ]
