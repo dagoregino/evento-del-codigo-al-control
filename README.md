@@ -23,8 +23,7 @@ El contenido está diseñado para guiar al estudiante desde la sintaxis básica 
 
 ## Material de Apoyo
 
-* 📄 **Diapositivas del Taller:** [Descargar Presentación (PDF)](./assets/del_codigo_al_control.pdf?raw=true)
----
+* 📄 **Diapositivas del Taller:** [Descargar Presentación (PDF)](https://raw.githubusercontent.com/dagoregino/evento-del-codigo-al-control/main/assets/del_codigo_al_control.pdf)
 
 ## Estructura del Repositorio
 
