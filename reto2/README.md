@@ -30,6 +30,9 @@ Aplicar lecturas del conversor analógico-digital (ADC), visualización de datos
 | **LED de Alerta** | Ánodo (+) | GPIO 25 (con Resistencia 220 Ω) |
 | | Cátodo (-) | GND |
 
+#### Enlace Wokwi:
+https://wokwi.com/projects/473290306475958273
+
 #### Diagrama de Conexión:
 ```text
   [ ESP32 ]
