@@ -31,6 +31,9 @@ Aplicar la configuración de pines digitales con `pinMode()`, el cambio de estad
 | **LED Verde** | Ánodo (+) | GPIO 27 (con Resistencia 220 Ω) |
 | | Cátodo (-) | GND |
 
+#### Enlace Wokwi:
+https://wokwi.com/projects/473251545960984577
+
 #### Diagrama de Conexión:
 ```text
   [ ESP32 ]
